@@ -9,5 +9,7 @@ package com.mycompany.superhumanos.view;
  * @author Leonardo.amaris
  */
 public class Impresion {
-    
+    public static void imprimir() {
+        
+    }
 }
