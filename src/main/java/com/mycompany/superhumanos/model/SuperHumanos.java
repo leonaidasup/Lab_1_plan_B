@@ -16,7 +16,9 @@ public class SuperHumanos extends Persona implements Poderes{
     private final int telepatia;
     private final int oido;
 
-    public SuperHumanos(String superNombre, int poderFuerza, int poderVelocidad, int poderVision, int telepatia, int oido, String Nombre, int edad, String estadoCivil, double disponibilidad) {
+    public SuperHumanos(String Nombre, int edad, String estadoCivil, 
+            double disponibilidad, String superNombre, int poderFuerza, 
+            int poderVelocidad, int poderVision, int telepatia, int oido) {
         super(Nombre, edad, estadoCivil, disponibilidad);
         this.superNombre = superNombre;
         this.poderFuerza = poderFuerza;

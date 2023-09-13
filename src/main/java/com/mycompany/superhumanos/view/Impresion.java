@@ -10,6 +10,6 @@ package com.mycompany.superhumanos.view;
  */
 public class Impresion {
     public static void imprimir() {
-        
+        // terminar
     }
 }
