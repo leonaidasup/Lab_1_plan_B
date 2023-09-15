@@ -1,0 +1,6 @@
+com\mycompany\superhumanos\control\CrearSuperHumanos.class
+com\mycompany\superhumanos\control\GuardarSuperHumanos.class
+com\mycompany\superhumanos\view\Impresion.class
+model\SuperHumanos.class
+model\Poderes.class
+model\Persona.class

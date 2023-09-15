@@ -4,12 +4,13 @@
  */
 package com.mycompany.superhumanos.view;
 
-/**
- *
- * @author Leonardo.amaris
- */
+//import com.mycompany.superhumanos.control.GuardarSuperHumanos;
+import static com.mycompany.superhumanos.control.GuardarSuperHumanos.crearIdentidad;
+
 public class Impresion {
-    public static void imprimir() {
-        // terminar
+    
+    public static void main(String[] args) {
+        //GuardarSuperHumanos impresion = new GuardarSuperHumanos();
+        crearIdentidad();
     }
 }
