@@ -3,15 +3,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.superhumanos.control;
-import model.SuperHumanos;
+import com.mycompany.superhumanos.model.SuperHumanos;
 /**
  *
  * @author Leonardo.amaris
  */
 public class CrearSuperHumanos {
-    public static SuperHumanos CrearSuperHumanos(String nombre, String superNombre, int edad, String estadoCivil) {
-        return new SuperHumanos(nombre, edad,
-                estadoCivil, 24, superNombre, 
-                (int)(Math.random() * 100), (int)(Math.random() * 100));
-    }
+    public static SuperHumanos CrearSuperHumanos(String nombre, String superNombre, 
+            double disponibilidad, int edad, String estadoCivil, int fuerza, int velocidad) {
+        return new SuperHumanos(nombre, edad, estadoCivil, disponibilidad, 
+                superNombre, fuerza, velocidad);
+    };
 }

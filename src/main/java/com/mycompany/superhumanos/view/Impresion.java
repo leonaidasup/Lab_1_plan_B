@@ -4,13 +4,21 @@
  */
 package com.mycompany.superhumanos.view;
 
-//import com.mycompany.superhumanos.control.GuardarSuperHumanos;
-import static com.mycompany.superhumanos.control.GuardarSuperHumanos.crearIdentidad;
-
+import com.mycompany.superhumanos.model.SuperHumanos;
+import com.mycompany.superhumanos.control.GuardarSuperHumanos;
+/**
+ *
+ * @author Leonardo.amaris
+ */
 public class Impresion {
-    
+    public static void imprimir() {
+        for (SuperHumanos SuperHeroe : GuardarSuperHumanos.GuardarSuperHumanos()) {
+            if (SuperHeroe.getEdad() < 50 && "soltero".equals(SuperHeroe.getEstadoCivil())){
+                System.out.println(SuperHeroe);
+            }
+        }
+    }
     public static void main(String[] args) {
-        //GuardarSuperHumanos impresion = new GuardarSuperHumanos();
-        crearIdentidad();
+        imprimir();
     }
 }
