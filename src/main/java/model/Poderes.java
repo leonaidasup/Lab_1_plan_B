@@ -11,7 +11,4 @@ package model;
 public interface Poderes {
     public void superFuerza();
     public void visionDeCalor();
-
-    
-
 }

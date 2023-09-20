@@ -13,26 +13,21 @@ public class Persona {
     private final int [] edad;
     private final String [] estadoCivil;
     private final double [] disponibilidad;
-
     public Persona() {
         Nombre = new String [10];
         edad = new int [10];
         estadoCivil = new String [10];
         disponibilidad = new double [10];
     }
-
     public String[] getNombre() {
         return Nombre;
     }
-
     public int[] getEdad() {
         return edad;
     }
-
     public String[] getEstadoCivil() {
         return estadoCivil;
     }
-
     public double[] getDisponibilidad() {
         return disponibilidad;
     }   
