@@ -40,29 +40,48 @@ public class FRM_Principal extends javax.swing.JFrame {
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
         btn_IngresarDatos = new javax.swing.JButton();
-        btn_Imprimir = new javax.swing.JButton();
+        btn_ImprimirDatos = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jta_Reporte = new javax.swing.JTextArea();
-        btn_GenerateSupers = new javax.swing.JButton();
+        btn_ImprimirSuperHumanosA = new javax.swing.JButton();
         humanos = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jta_supers = new javax.swing.JTextArea();
+        jta_superhumanosA = new javax.swing.JTextArea();
         superhumans = new javax.swing.JLabel();
-        btn_CrearSupers = new javax.swing.JButton();
+        btn_CrearSuperHumanos = new javax.swing.JButton();
+        btn_ImprimirSuperHumanosD = new javax.swing.JButton();
+        btn_CrearEscuadronesSH = new javax.swing.JButton();
+        btn_IngresarDatosAlfis = new javax.swing.JButton();
+        btn_EmpezarGuerra = new javax.swing.JButton();
+        btn_ImprimirDatosAlfis = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jta_superhumanosD = new javax.swing.JTextArea();
+        jLabel2 = new javax.swing.JLabel();
+        btn_ImprimirEscuadron1 = new javax.swing.JButton();
+        btn_ImprimirEscuadron2 = new javax.swing.JButton();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jta_ImprimirEscuadron1 = new javax.swing.JTextArea();
+        jLabel3 = new javax.swing.JLabel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jTextArea3 = new javax.swing.JTextArea();
+        jLabel4 = new javax.swing.JLabel();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        btn_IngresarDatos.setText("Ingresar Datos");
+        btn_IngresarDatos.setText("Ingresar Humanos");
         btn_IngresarDatos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_IngresarDatosActionPerformed(evt);
             }
         });
 
-        btn_Imprimir.setText("Imprimir Humanos");
-        btn_Imprimir.addActionListener(new java.awt.event.ActionListener() {
+        btn_ImprimirDatos.setText("Imprimir Humanos");
+        btn_ImprimirDatos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_ImprimirActionPerformed(evt);
+                btn_ImprimirDatosActionPerformed(evt);
             }
         });
 
@@ -70,27 +89,100 @@ public class FRM_Principal extends javax.swing.JFrame {
         jta_Reporte.setRows(5);
         jScrollPane1.setViewportView(jta_Reporte);
 
-        btn_GenerateSupers.setText("Generar super Humanos");
-        btn_GenerateSupers.addActionListener(new java.awt.event.ActionListener() {
+        btn_ImprimirSuperHumanosA.setText("Imprimir SuperHumanos admitidos");
+        btn_ImprimirSuperHumanosA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_GenerateSupersActionPerformed(evt);
+                btn_ImprimirSuperHumanosAActionPerformed(evt);
             }
         });
 
         humanos.setText("Humanos");
 
-        jta_supers.setColumns(20);
-        jta_supers.setRows(5);
-        jScrollPane2.setViewportView(jta_supers);
+        jta_superhumanosA.setColumns(20);
+        jta_superhumanosA.setRows(5);
+        jScrollPane2.setViewportView(jta_superhumanosA);
 
-        superhumans.setText("SuperHumanos");
+        superhumans.setText("SuperHumanos Admitidos");
 
-        btn_CrearSupers.setText("Crear SuperHumanos");
-        btn_CrearSupers.addActionListener(new java.awt.event.ActionListener() {
+        btn_CrearSuperHumanos.setText("Pruebas SuperHumanos");
+        btn_CrearSuperHumanos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_CrearSupersActionPerformed(evt);
+                btn_CrearSuperHumanosActionPerformed(evt);
             }
         });
+
+        btn_ImprimirSuperHumanosD.setText("Imprimir SuperHumanos denegados");
+        btn_ImprimirSuperHumanosD.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_ImprimirSuperHumanosDActionPerformed(evt);
+            }
+        });
+
+        btn_CrearEscuadronesSH.setText("Conformar Escuadrones");
+        btn_CrearEscuadronesSH.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_CrearEscuadronesSHActionPerformed(evt);
+            }
+        });
+
+        btn_IngresarDatosAlfis.setText("Llegada de ALFIS");
+        btn_IngresarDatosAlfis.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_IngresarDatosAlfisActionPerformed(evt);
+            }
+        });
+
+        btn_EmpezarGuerra.setText("GUERRA");
+        btn_EmpezarGuerra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_EmpezarGuerraActionPerformed(evt);
+            }
+        });
+
+        btn_ImprimirDatosAlfis.setText("Imprimir Alfis");
+        btn_ImprimirDatosAlfis.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_ImprimirDatosAlfisActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setText("SuperHumanos Denegados");
+
+        jta_superhumanosD.setColumns(20);
+        jta_superhumanosD.setRows(5);
+        jScrollPane3.setViewportView(jta_superhumanosD);
+
+        jLabel2.setText("Imprimir Escuadron 1 SuperHumanos");
+
+        btn_ImprimirEscuadron1.setText("Imprimir Escuadron 1");
+        btn_ImprimirEscuadron1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_ImprimirEscuadron1ActionPerformed(evt);
+            }
+        });
+
+        btn_ImprimirEscuadron2.setText("Imprimir Escuadron 2");
+        btn_ImprimirEscuadron2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_ImprimirEscuadron2ActionPerformed(evt);
+            }
+        });
+
+        jta_ImprimirEscuadron1.setColumns(20);
+        jta_ImprimirEscuadron1.setRows(5);
+        jScrollPane4.setViewportView(jta_ImprimirEscuadron1);
+
+        jLabel3.setText("Imprimir ALFIS");
+
+        jTextArea3.setColumns(20);
+        jTextArea3.setRows(5);
+        jScrollPane5.setViewportView(jTextArea3);
+
+        jLabel4.setText("Imprimir Escuadron 2 SuperHumanos");
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane6.setViewportView(jTextArea1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -99,27 +191,46 @@ public class FRM_Principal extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane1))
-                .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(236, 236, 236)
-                .addComponent(humanos, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(240, Short.MAX_VALUE)
-                .addComponent(superhumans, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(btn_IngresarDatos)
-                .addGap(18, 18, 18)
-                .addComponent(btn_Imprimir)
-                .addGap(18, 18, 18)
-                .addComponent(btn_CrearSupers, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btn_GenerateSupers)
-                .addContainerGap())
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane1)
+                    .addComponent(jScrollPane2)
+                    .addComponent(jScrollPane3)
+                    .addComponent(jScrollPane4)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(superhumans, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(humanos, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jScrollPane6)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btn_CrearEscuadronesSH)
+                                .addGap(18, 18, 18)
+                                .addComponent(btn_ImprimirEscuadron1)
+                                .addGap(18, 18, 18)
+                                .addComponent(btn_ImprimirEscuadron2)
+                                .addGap(18, 18, 18)
+                                .addComponent(btn_IngresarDatosAlfis)
+                                .addGap(18, 18, 18)
+                                .addComponent(btn_ImprimirDatosAlfis, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(36, 36, 36)
+                                .addComponent(btn_EmpezarGuerra, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btn_IngresarDatos)
+                                .addGap(18, 18, 18)
+                                .addComponent(btn_ImprimirDatos)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(btn_CrearSuperHumanos, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btn_ImprimirSuperHumanosA)
+                                .addGap(18, 18, 18)
+                                .addComponent(btn_ImprimirSuperHumanosD)))
+                        .addContainerGap(98, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -127,18 +238,43 @@ public class FRM_Principal extends javax.swing.JFrame {
                 .addGap(31, 31, 31)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn_IngresarDatos)
-                    .addComponent(btn_Imprimir)
-                    .addComponent(btn_GenerateSupers)
-                    .addComponent(btn_CrearSupers))
-                .addGap(29, 29, 29)
+                    .addComponent(btn_ImprimirDatos)
+                    .addComponent(btn_ImprimirSuperHumanosA)
+                    .addComponent(btn_CrearSuperHumanos)
+                    .addComponent(btn_ImprimirSuperHumanosD))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn_EmpezarGuerra, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_CrearEscuadronesSH)
+                    .addComponent(btn_ImprimirEscuadron1)
+                    .addComponent(btn_ImprimirEscuadron2)
+                    .addComponent(btn_IngresarDatosAlfis)
+                    .addComponent(btn_ImprimirDatosAlfis))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(humanos)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(superhumans)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(25, Short.MAX_VALUE))
         );
 
         pack();
@@ -150,32 +286,59 @@ public class FRM_Principal extends javax.swing.JFrame {
         String estadoCivil=JOptionPane.showInputDialog("Ingrese su estado civil");
         String DNI=JOptionPane.showInputDialog("Ingrese su DNI");
         String CiudadDeResidencia=JOptionPane.showInputDialog("Ingrese su Ciudad de residencia");
-        Persona persona=new Persona(nombre,edad,estadoCivil,DNI,CiudadDeResidencia);
+        String Hijos=JOptionPane.showInputDialog("¿Cuantos hij@s tiene?");
+        Persona persona=new Persona(nombre,edad,estadoCivil,DNI,CiudadDeResidencia, Hijos);
         administradorArray.InsertarPersona(persona);
         JOptionPane.showMessageDialog(null, "Persona Guardada Correctamente");
     }//GEN-LAST:event_btn_IngresarDatosActionPerformed
 
-    private void btn_ImprimirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ImprimirActionPerformed
+    private void btn_ImprimirDatosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ImprimirDatosActionPerformed
         jta_Reporte.setText("");
         jta_Reporte.setText(administradorArray.DevolverInformacion());
-    }//GEN-LAST:event_btn_ImprimirActionPerformed
+    }//GEN-LAST:event_btn_ImprimirDatosActionPerformed
 
-    private void btn_GenerateSupersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_GenerateSupersActionPerformed
-        jta_supers.setText("");
+    private void btn_ImprimirSuperHumanosAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ImprimirSuperHumanosAActionPerformed
+        jta_superhumanosA.setText("");
         //jta_supers.setText(SuperHumanos.poderXray);
-    }//GEN-LAST:event_btn_GenerateSupersActionPerformed
+    }//GEN-LAST:event_btn_ImprimirSuperHumanosAActionPerformed
 
-    private void btn_CrearSupersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_CrearSupersActionPerformed
-        String SuperNombre=JOptionPane.showInputDialog("Ingrese su nombre");
-        String SaludMental=JOptionPane.showInputDialog("Ingrese su edad");
-        String superFuerza=JOptionPane.showInputDialog("Ingrese su estado civil");
-        String visionLaser=JOptionPane.showInputDialog("Ingrese su DNI");
-        String visionXray=JOptionPane.showInputDialog("Ingrese su Ciudad de residencia");
-        Persona superh=new SuperHumanos(nombre,edad,estadoCivil,DNI,CiudadDeResidencia,
-                SuperNombre,SaludMental,superFuerza,visionLaser,visionXray);
+    private void btn_CrearSuperHumanosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_CrearSuperHumanosActionPerformed
+        String superFuerza =JOptionPane.showInputDialog("Ingrese su nombre");
+        String visionLaser =JOptionPane.showInputDialog("Ingrese su nombre");
+        String visionXray =JOptionPane.showInputDialog("Ingrese su nombre");
+        SuperHumanos superh = new SuperHumanos(nombre,edad,estadoCivil,DNI,CiudadDeResidencia, Hijos, 
+                superFuerza,visionLaser,visionXray);
         admitirSupers.InsertarSuper(superh);
         JOptionPane.showMessageDialog(null, "SuperHumano Guardado Correctamente");
-    }//GEN-LAST:event_btn_CrearSupersActionPerformed
+    }//GEN-LAST:event_btn_CrearSuperHumanosActionPerformed
+
+    private void btn_IngresarDatosAlfisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_IngresarDatosAlfisActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_IngresarDatosAlfisActionPerformed
+
+    private void btn_ImprimirDatosAlfisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ImprimirDatosAlfisActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_ImprimirDatosAlfisActionPerformed
+
+    private void btn_ImprimirSuperHumanosDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ImprimirSuperHumanosDActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_ImprimirSuperHumanosDActionPerformed
+
+    private void btn_CrearEscuadronesSHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_CrearEscuadronesSHActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_CrearEscuadronesSHActionPerformed
+
+    private void btn_EmpezarGuerraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_EmpezarGuerraActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_EmpezarGuerraActionPerformed
+
+    private void btn_ImprimirEscuadron1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ImprimirEscuadron1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_ImprimirEscuadron1ActionPerformed
+
+    private void btn_ImprimirEscuadron2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ImprimirEscuadron2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_ImprimirEscuadron2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -213,16 +376,35 @@ public class FRM_Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn_CrearSupers;
-    private javax.swing.JButton btn_GenerateSupers;
-    private javax.swing.JButton btn_Imprimir;
-    private javax.swing.JButton btn_IngresarDatos;
+    private javax.swing.JButton btn_CrearEscuadronesSH;
+    public javax.swing.JButton btn_CrearSuperHumanos;
+    private javax.swing.JButton btn_EmpezarGuerra;
+    public javax.swing.JButton btn_ImprimirDatos;
+    private javax.swing.JButton btn_ImprimirDatosAlfis;
+    private javax.swing.JButton btn_ImprimirEscuadron1;
+    private javax.swing.JButton btn_ImprimirEscuadron2;
+    public javax.swing.JButton btn_ImprimirSuperHumanosA;
+    private javax.swing.JButton btn_ImprimirSuperHumanosD;
+    public javax.swing.JButton btn_IngresarDatos;
+    private javax.swing.JButton btn_IngresarDatosAlfis;
     private javax.swing.JLabel humanos;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTextArea jta_Reporte;
-    private javax.swing.JTextArea jta_supers;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea3;
+    private javax.swing.JTextArea jta_ImprimirEscuadron1;
+    public javax.swing.JTextArea jta_Reporte;
+    public javax.swing.JTextArea jta_superhumanosA;
+    private javax.swing.JTextArea jta_superhumanosD;
     private javax.swing.JLabel superhumans;
     // End of variables declaration//GEN-END:variables
 }

@@ -10,15 +10,15 @@ package Model;
  */
 public class SuperHumanos extends Persona implements Poderes{
     private String superNombre;
-    private int SaludMental;
+    private int saludMental;
     private final int superFuerza;
     private final int visionLaser;
     private final int visionXray;
 
     public SuperHumanos(String nombre, String edad, String estadoCivil, 
-            String DNI, String CiudadDeResidencia, String superNombre, int superFuerza,
+            String DNI, String CiudadDeResidencia, String Hijos, String superNombre, int saludMental, int superFuerza,
             int visionLaser, int visionXray) {
-        super(nombre, edad, estadoCivil, DNI, CiudadDeResidencia);
+        super(nombre, edad, estadoCivil, DNI, CiudadDeResidencia, Hijos);
         this.superNombre = superNombre;
         this.superFuerza = superFuerza;
         this.visionLaser = visionLaser;
@@ -34,34 +34,36 @@ public class SuperHumanos extends Persona implements Poderes{
     }
 
     public int getSaludMental() {
-        return SaludMental;
+        return saludMental;
     }
 
-    public void setSaludMental(int SaludMental) {
-        this.SaludMental = SaludMental;
+    public void setSaludMental(int saludMental) {
+        this.saludMental = saludMental;
     }
 
     @Override
-    public int superFuerza(){   
-        return superFuerza;
+    public int superFuerza(){
+        return (int)(Math.random()*10+1);
         
     }
     
     @Override
     public int visionLaser(){   
-        return visionLaser;
+        return (int)(Math.random()*10+1);
         
     }
     
     @Override
     public int visionXray(){    
-        return visionXray;
+        return (int)(Math.random()*10+1);
         
     }
 
     @Override
     public String toString() {
-        return "SuperHumanos{" + "superNombre=" + superNombre + ", SaludMental=" + SaludMental + ", superFuerza=" + superFuerza + ", visionLaser=" + visionLaser + ", visionXray=" + visionXray + '}';
+        return "SuperHumanos{" + "superNombre=" + superNombre + ", saludMental=" + saludMental + 
+                ", superFuerza=" + superFuerza + ", visionLaser=" + visionLaser + ", Edad=" + 
+                getEdad() + ", EstadoCivil=" + getEstadoCivil() +'}';
     }
     
     

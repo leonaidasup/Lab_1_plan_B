@@ -15,13 +15,15 @@ public class Persona {
     private String estadoCivil; 
     private String DNI;
     private String CiudadDeResidencia;
+    private String Hijos;
 
-    public Persona(String nombre, String edad, String estadoCivil, String DNI, String CiudadDeResidencia) {
+    public Persona(String nombre, String edad, String estadoCivil, String DNI, String CiudadDeResidencia, String Hijos) {
         this.nombre = nombre;
         this.edad = edad;
         this.estadoCivil = estadoCivil;
         this.DNI = DNI;
         this.CiudadDeResidencia = CiudadDeResidencia;
+        this.Hijos = Hijos;
     }
 
     public String getNombre() {
@@ -61,13 +63,21 @@ public class Persona {
         return CiudadDeResidencia;
     }
 
+    public String getHijos() {
+        return Hijos;
+    }
+
+    public void setHijos(String Hijos) {
+        this.Hijos = Hijos;
+    }
+
     public void setCiudadDeResidencia(String CiudadDeResidencia) {
         this.CiudadDeResidencia = CiudadDeResidencia;
     }
 
     @Override
     public String toString() {
-        return "Persona{" + "nombre=" + nombre + ", edad=" + edad + ", estadoCivil=" + estadoCivil + ", DNI=" + DNI + ", CiudadDeResidencia=" + CiudadDeResidencia + '}';
+        return "Persona{" + "nombre=" + nombre + ", edad=" + edad + ", estadoCivil=" + estadoCivil + ", DNI=" + DNI + ", CiudadDeResidencia=" + CiudadDeResidencia + ", Hijos=" + Hijos + '}';
     }
     
     
